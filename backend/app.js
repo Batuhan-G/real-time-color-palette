@@ -20,7 +20,7 @@ io.on('connection', (socket) => {
         console.log(color)
 
         lastColor = color
-        socket.broadcast.emit('receive', color)
+        io.emit('receive', color)
     })
 
     socket.on('disconnect', () => {

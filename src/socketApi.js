@@ -14,3 +14,10 @@ export const init = () => {
 export const send = (color) => {
     socket.emit("newColor" ,color)
 }
+
+export const subscribe = (callback) => {
+    socket.on("receive", (color) => {
+        console.log(color)
+        callback(color)
+    })
+}
