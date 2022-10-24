@@ -1,4 +1,4 @@
-# Create React App
+# Real Time Color Palette App
 
 A basic color palette application that communicates with the backend and acts on all clients at the same time.<br><br>
 **socket.io** <br>
